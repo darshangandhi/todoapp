@@ -1,1 +1,41 @@
+<<<<<<< HEAD
 
+=======
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <style>
+        body {
+        . padding : 150 x
+        }
+    </style>
+</head>
+
+<body ng-app="todoApp">
+<h1>Todo App</h1>
+
+<div ng-controller="MainCtrl">
+    <div>
+        <input type="text" placeholder="Enter to do: " ng-model="newTodo.text">
+        <input type="hidden" ng-model="newTodo.completed" value="false">
+        <button ng-click="add()">Add</button>
+        <br><br>
+    </div>
+    <div ng-repeat="item in todos">
+        <input type="checkbox" ng-bind="item.completed">
+        <span ng-bind="item.text"></span>
+        <button ng-click="delete(item)">Delete</button>
+    </div>
+    <div>
+        <br>
+        <button>Clear Completed</button>
+    </div>
+</div>
+</div>
+<script src="lib/angular.min.js"></script>
+<script src="script/app.js"></script>
+</body>
+</html>
+>>>>>>> 13fffd7787e4cab55e00ae8e8e45db7da7ca5129
